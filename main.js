@@ -60,8 +60,11 @@ function signOut() {
 function deleteUser() {
     var user = auth.currentUser;
     if (user) {
-        alert("User " + user.email + " Deleted");
-        user.delete().then(function() {}).catch(e => alert(e.message));
+
+        if (confirm("Are you sure to Delete " + user.email + " Account")) {
+            alert("User " + user.email + " Deleted");
+            user.delete().then(function() {}).catch(e => alert(e.message));
+        }
     } else {
         alert("No Active User to Delete");
     }
