@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+      <meta charset="utf-8">
+      <title>Bytewise Authentication</title>
+      <link type="image/icon" href="bytewise.ico" rel="icon">
+   </head>
+   <body>
+      <div style="text-align: center">
+         <h2>Bytewise</h2>
+         <form id="clear">
+            <p>Email : <input  id="email" type="email"></p>
+            <p>Password : <input  id="password" type="password"></p>
+            <input type="button" value="SignUp" onclick="signUp()">
+            <input type="button" value="SignIn" onclick="signIn()"> 
+            <input type="button"  value="SignOut" onclick="signOut()">
+            <input type="button"  value="Delete" onclick="deleteUser()">
+            <br><br>
+            <button  type="submit"  >Clear Page</button>
+         </form>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
